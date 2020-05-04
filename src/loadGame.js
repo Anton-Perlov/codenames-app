@@ -17,6 +17,7 @@ export async function loadGame(hash) {
 
             const userId = JSON.parse(localStorage.getItem('userId'))
             if(userId.id==game.val().creater){
+                $("#gameLink").show()
                 $('.captainFlag').change(async function() {
                     if(this.checked) {
                         let returnVal = confirm("Are you sure?");

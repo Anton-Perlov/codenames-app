@@ -22,7 +22,7 @@ module.exports = {
 		https: false,
 		port: 9000
 	},
-	devtool: "#inline-source-map",
+	// devtool: "#inline-source-map",
 	plugins: [
 		new HTMLWepackPlugin({
 			template: './index.html'
@@ -45,10 +45,10 @@ module.exports = {
 				test: /\.(jpg|jpeg|png|gif|svg|bmp)$/,
 				use: ['file-loader']
 			},
-			{
-				test: /\.(map)$/,
-				use: ['file-loader']
-			}
+			// {
+			// 	test: /\.(map)$/,
+			// 	use: ['file-loader']
+			// }
 		]
 	}
 }

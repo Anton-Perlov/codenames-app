@@ -38,7 +38,7 @@ if(window.location.hash){
 
 function hashChanged(){
     let hash = window.location.hash.substr(1)
-
+    // $("#gameLink").hide()
     $("#gameLink").html(gameLink())
     $("#gameURL").val(window.location.href)
     $("#copyLink").click(copyLink)
